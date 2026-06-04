@@ -16,3 +16,37 @@ Sí. Siempre y cuando ALFA haya actualizado previamente su fork con los cambios 
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
 No. Los cambios no se pierden si quiero actualizar el fork ya que github guarda los cambios.
+
+e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos.
+
+GAMMA realiza un fork de BETA 
+Daniela Martinez
+git clone "nombre_del_repo"
+git add .
+git commit -m "cambios respectivos de cada usuario"
+git push
+
+ALFA realiza un fork de BETA
+Emilaino Nuñez
+git clone "nombre_del_repo"
+git add .
+git commit -m "cambios respectivos de cada usuario"
+git push
+
+BETA realiza un git clone de su respositorio
+Ignacio Villada
+git clone (link de su repo)
+
+A traves de Github GAMMA realizaron una pull request del fork BETA y 
+luego hicieron un merge para acutalizar cada fork y unir los cambios del repositorio
+principal con los forks respectivos y asi tener los forks actualizados.
+
+COMANDOS REALIZADOS POR ALFA Y GAMMA PARA TRAER CAMBIOS DE BETA
+git remote add upstream https...(link de beta)
+git fetch upstream
+git merge upstream/main
+git push origin main
+git pull 
+
+
